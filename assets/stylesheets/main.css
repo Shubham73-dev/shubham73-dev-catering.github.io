@@ -1,0 +1,335 @@
+/* Global CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Times New Roman", Georgia, Serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* Hepling classes */
+.row-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row-sec{
+    display: flex;
+    justify-content: space-between;
+}
+.sec-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* generic css */
+header{
+    position: fixed;
+
+    top: 0;
+    
+    left: 0;
+    
+    width: 100%;
+    
+    /* height: 50px; */
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid rgba(128, 128, 128,0.5);
+    box-shadow: 0px -11px 6px 14px rgb(128 128 128 / 26%) ;
+}
+section{
+    /* margin-bottom: 6%; */
+}
+/* specific css */
+.logo{
+    margin: 8px;
+    width: 50%;
+}
+.gourmet{
+    /* border: 1px solid black; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    height: 35px;
+    align-items: center;
+    margin-left: 15px;
+}
+.gourmet:hover{
+    background-color: #CCCCCC;
+}
+.gourmet span{
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    
+}
+.nav{
+    margin-right: 2%;
+    width: 18%;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    /* border: 1px solid black; */
+    text-align: center;
+    height: 35px;
+}
+.nav a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    width: 100%;
+    height: inherit;
+}
+.nav a:hover{
+    background-color: #CCCCCC;
+}
+/* section-1 */
+.sec-1{
+    position: relative;
+    background-image: url('https://www.w3schools.com/w3images/hamburger.jpg');
+    background-position: left bottom;
+    height: 100vh;
+    /* margin-bottom: 5%; */
+}
+.sec-1 img{
+    height: inherit;
+    width: 100%;
+}
+.le-catering{
+    position:absolute;
+    bottom: 5%;
+    left: 1%;
+    /* border: 1px solid black; */
+    width: 15%;
+}
+.le-catering span{
+    font-size: 38px;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    /* opacity: 0.95; */
+    color: gray;
+}
+/* section-2 */
+
+
+.plates{
+    width: 48%;
+}
+.plates img{
+    width: 100%;
+    height: inherit;
+    opacity: 0.7;
+    
+}
+.abt-catering{
+    width: 48%;
+    /* z-index: 2; */
+    margin-top: 15px;
+}
+.catering-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+.catering-title h1{
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    z-index: 2;
+}
+.tradition{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.tradition h5{
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    font-weight:100;
+}
+.abt-para{
+    line-height: 30px;
+}
+.abt-para p{
+    font-size: 18px;
+}
+.abt-para span{
+    color: gray;
+}
+section hr{
+    margin-top: 10%;
+    color:lightgray;
+    opacity: 0.3;
+}
+/* section-3 */
+.menu{
+    /* border: 1px solid black; */
+}
+.dish{
+    /* border: 1px solid black; */
+}
+.dish img{
+    opacity: 0.7;
+}
+.our-menu{
+    display: flex;
+    justify-content: center;
+}
+.our-menu h1{
+    font-size: 37px;
+    font-weight: 100;
+    text-transform: capitalize;
+    letter-spacing: 4px;
+    margin-bottom: 10%;
+    z-index: 2;
+}
+.list{
+    line-height: 2.5rem;
+    margin-bottom: 7%;
+}
+.list h4{
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+.list p{
+    color: gray;
+}
+.to-top{
+    background: white;
+    position: fixed;
+    bottom: 26px;
+    right: 30px;
+    width: 35px;
+    height: 30px;
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #1f1f1f;
+    text-decoration: none;
+    pointer-events: none;
+    transition: all 0.4s;
+    opacity: 0;
+
+}
+.to-top.active{
+    bottom:32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.to-top.active:hover{
+    background-color: yellow;
+}
+/* section-4 */
+.contact-heading{
+    margin-bottom: 5%;
+}
+.contact-heading h1{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    
+}
+.contact-para{
+    line-height: 1.5rem;
+    margin-bottom: 2%;
+}
+.catering-service h4{
+    color: #607D8B;
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+.catering-para{
+    margin-bottom: 2%;
+}
+.sec-4 input[type="text"]{
+    width: 100%;
+    height: 3.5rem;
+    border-color: transparent transparent rgba(128, 128, 128,0.5) transparent ;
+    margin-bottom: 2%;
+    padding-left: 10px;
+}
+.sec-4 input[type="number"]{
+    width: 100%;
+    height: 3.5rem;
+    border-color:transparent transparent rgba(128, 128, 128,0.5) transparent ;
+    margin-bottom: 2%;
+    padding-left: 10px;
+}
+.sec-4 input[type="datetime-local"]{
+    width: 100%;
+    height: 3.5rem;
+    border-color: transparent transparent rgba(128, 128, 128,0.5) transparent ;
+    margin-bottom: 2%;
+    padding-left: 10px;
+}
+.sec-4 input[type="submit"]{
+    border: none;
+    font-size: 14px;
+    height: 2.5rem;
+    width: 9rem;
+    cursor: pointer;
+    margin-top: 1%;
+}
+.sec-4 input[type="submit"]:hover{
+    background-color: #CCCCCC;
+}
+.sec-4{
+    margin-bottom: 6%;
+}
+/* footer */
+footer{
+    background-color: black;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer h3{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+.scroll{
+    width: 100%;
+    height: 4.5rem;
+}
+.menu-div{
+    height: 6rem;
+}
+.contact-div{
+    height: 6rem;
+}
+
+
+
+ 
